@@ -35,7 +35,7 @@ def main_snp(param, filename):
 
 def get_snp(filename):
   fields = get_all_lines_fields(filename)
-  data = 'dbSNP ID'
+  data = 'dbSNP ID\n'
   for line in fields:
     if line[-1] != 'dbSNP':
       data += str(line[-1]) + '\n'
