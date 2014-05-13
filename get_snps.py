@@ -1,3 +1,12 @@
+############################################################
+# Author: Amanjeev Sethi
+# License: MIT
+# Usage: At your own risk
+# This file is very specific to the needs of this project.
+# Please do not attempt to use it without reading this code.
+# God knows this awful file needs refactoring.
+############################################################
+
 import sys
 import re
 
