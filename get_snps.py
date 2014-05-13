@@ -45,11 +45,11 @@ def main_snp(param, filename, outfile):
   else:
     get_both(filename)
 
-def get_chr_pos_acc(filename, outfile):
+def get_chr_pos_acc(filename, outfile, remove_range=False):
   fields = get_all_lines_fields(filename)
   data = 'Accession\tLocation\tChromosome\n'
   for line in fields:
-    if line[-1] != 'Accession':
+    if line[-1] != 'Accession' and '-' not in line[-2]:
       data += line[-1] + '\t' + line[-2] + '\t' + line[-3] + '\n'
   write_file(outfile, data)
 
